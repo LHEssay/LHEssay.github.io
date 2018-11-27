@@ -105,12 +105,55 @@
                 <div class="col-lg-4">
                     <i class="about-icon fa fa-question"></i>
                     <h4 class="my-3">How does it work?</h4>
-                    <p class="text-white"></p>
+                    <nav class="nav nav-pills justify-content-center">
+                        <a id="how-step1-pill" class="nav-item nav-link text-white active" aria-controls="how-step1"
+                           aria-selected="true" href="#how-step1" data-toggle="pill">Step 1</a>
+                        <a id="how-step2-pill" class="nav-item nav-link text-white" aria-controls="how-step2"
+                           aria-selected="false" href="#how-step2" data-toggle="pill">Step 2</a>
+                        <a id="how-step3-pill" class="nav-item nav-link text-white" aria-controls="how-step3"
+                           aria-selected="false" href="#how-step3" data-toggle="pill">Step 3</a>
+                        <a id="how-step4-pill" class="nav-item nav-link text-white" aria-controls="how-step4"
+                           aria-selected="false" href="#how-step4" data-toggle="pill">Step 4</a>
+                        <a id="how-step5-pill" class="nav-item nav-link text-white" aria-controls="how-step5"
+                           aria-selected="false" href="#how-step5" data-toggle="pill">Step 5</a>
+                    </nav>
+
+                    <div class="tab-content mb-3" id="pills-tabContent">
+                        <div id="how-step1" class="tab-pane fade show active" role="tabpanel"
+                             aria-labelledby="how-step1-pill">Enter your paper’s word count to receive an estimated
+                            return date and edit cost.
+                        </div>
+                        <div id="how-step2" class="tab-pane fade" role="tabpanel" aria-labelledby="how-step2-pill">
+                            Attach your essay by providing the link to an online document. Ensure that editing
+                            permissions are enabled for link sharing. In the “comments” box, mention any word or page
+                            limit for the assignment. Click “submit” to send your request to our LHEssay editors for
+                            approval.
+                        </div>
+                        <div id="how-step3" class="tab-pane fade" role="tabpanel" aria-labelledby="how-step3-pill">Our
+                            editors process your request, taking an official word count and checking your submission to
+                            ensure that it is a legitimate draft. We will edit submissions of most qualities, but we
+                            will not write an entire assignment for you. If your essay is approved, you will receive an
+                            email with a confirmed return date and price.
+                        </div>
+                        <div id="how-step4" class="tab-pane fade" role="tabpanel" aria-labelledby="how-step4-pill">Upon
+                            receiving your order confirmation, complete the indicated online payment. In order to
+                            protect our editors’ time, we will not edit an essay until we have received payment. Our
+                            prices are always transparent, with a flat rate of 0.045 cents per word—for reference, a
+                            650-word college essay would cost just under $30.
+                        </div>
+                        <div id="how-step5" class="tab-pane fade" role="tabpanel" aria-labelledby="how-step5-pill">
+                            Relax. Once your payment is complete, your order becomes official. Sit back and allow our
+                            editors to do what they do best; when your paper is returned, it will be ready to turn in.
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <i class="about-icon fa fa-balance-scale"></i>
                     <h4 class="my-3">Why choose us?</h4>
-                    <p class="text-white"></p>
+                    <p class="text-white">At LHEssay, we value ease of access. With an entirely online submission and
+                        payment process, LHEssay ensures that you get the help you need whenever and wherever you may
+                        need it.
+                    </p>
                 </div>
             </div>
         </div>
@@ -136,10 +179,9 @@
                 </label>
             </div>
             <div class="col-md-6">
-                <label class="w-100" for="submissionComments">Submission Comments
-                    <textarea class="w-100 form-control"
-                              id="submissionComments" placeholder="todo write about stuff like word limit here"
-                              rows="4"></textarea>
+                <label class="w-100" for="submissionComments">Submission Comments:
+                    <textarea placeholder="todo write about stuff like word limit here"
+                              class="w-100 form-control" id="submissionComments" rows="4"></textarea>
                 </label>
                 <label for="wordCount">Word Count:
                     <input class="form-control" id="wordCount" oninput="calculatePriceAndETA()" style="width:6rem;"
