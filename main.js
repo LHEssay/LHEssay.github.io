@@ -35,7 +35,7 @@ submitRequest = function () {
         clientName.length > 0 && clientEmail.length > 0 && documentLink.length > 0 &&
         selfReportedWordCount.length > 0 && submissionComments.length > 0)) {
         $(`<div class="alert alert-warning alert-dismissible submit-error-alert" role="alert">
-            Please fill out all of the fields before submitting your request.
+            Please complete all of the fields before submitting your request.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
