@@ -10,7 +10,7 @@ calculatePriceAndETA = function () {
         $.getJSON(url).done(function (data) {
             if (data.entry) {
                 const baseDays = parseInt(data.entry.content['$t']);
-                const additionalDays = Math.round(wordCount / 400 / 4);
+                const additionalDays = 1 + Math.round(wordCount / 400 / 4);
                 $("#dayEstimate").text("Estimated document return in " + (baseDays + additionalDays) + " days");
             } else {
                 $("#dayEstimate").text("Could not load the estimated return date");
