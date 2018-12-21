@@ -1,7 +1,7 @@
 calculatePriceAndETA = function () {
     const wordCount = parseInt($("#wordCount").val());
     if (wordCount && wordCount > 0) {
-        $("#priceEstimate").text("Estimated price: $" + (wordCount * 0.045).toFixed(2));
+        $("#priceEstimate").text("Estimated price: $" + (wordCount * 0.04).toFixed(2));
 
         $("#dayEstimate").text("Loading day estimate...");
         const api = 'https://spreadsheets.google.com/feeds/cells/';
@@ -68,4 +68,3 @@ submitRequest = function () {
         submitButton.text("Submit Request");
     });
 };
-
